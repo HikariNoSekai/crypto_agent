@@ -1,0 +1,41 @@
+.locale-wrapper {
+	margin-left: auto;
+}
+
+.locale__list {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.locale__item {
+	margin-left: 20px;
+	&:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+		display: none;
+	}
+}
+
+.locale__link {
+	cursor: pointer;
+	position: relative;
+	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px transparent;
+  	overflow: hidden;
+  	padding-bottom: 10px;
+  	&:before {
+  		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		background: var(--accent-color);
+		height: 2px;
+		transition-property: left, right;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+  	}
+  	&:hover:before, &:focus:before, &:active:before {
+  		left: 0;
+  		right: 0;
+  	}
+}
