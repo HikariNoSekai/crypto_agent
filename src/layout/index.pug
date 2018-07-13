@@ -5,29 +5,28 @@ block title
 	| Crypto Agent Bot: CAB - Crypto Agent Bot CAB Review: Cryptocurrency Trade Signals Group Telegram
 block content
 	main.maincontent
-		.flex-container
-			.news--wrapper
-				article.news__card(id="card1")
-					img.news__img(src="https://source.unsplash.com/200x200")
-					div.news__descr--wrapper
-						h3.news__heading What's up Moonpie
-						p.news__descr Cookie jelly beans cupcake ice cream I love. Chocolate bar toffee sweet jelly-o pudding icing cotton candy gingerbread jelly beans. Gingerbread chocolate danish bear claw. Powder I love gummies cotton candy tootsie scrollbars
-						a.news__readmore(href="#card1")
-							| Readmore
-							span.news__read →
-				article.news__card(id="card2")
-					img.news__img(src="https://source.unsplash.com/200x200")
-					div.news__descr--wrapper
-						h3.news__heading What's up Moonpie
-						p.news__descr Cookie jelly beans cupcake ice cream I love. Chocolate bar toffee sweet jelly-o pudding icing cotton candy gingerbread jelly beans. Gingerbread chocolate danish bear claw. Powder I love gummies cotton candy tootsie scrollbars
-						a.news__readmore(href="#card2")
-							| Readmore
-							span.news__read →
-				article.news__card(id="card3")
-					img.news__img(src="https://source.unsplash.com/200x200")
-					div.news__descr--wrapper
-						h3.news__heading What's up Moonpie
-						p.news__descr Cookie jelly beans cupcake ice cream I love. Chocolate bar toffee sweet jelly-o pudding icing cotton candy gingerbread jelly beans. Gingerbread chocolate danish bear claw. Powder I love gummies cotton candy tootsie scrollbars
-						a.news__readmore(href="#card3")
-							| Readmore
-							span.news__read →
+		.news--wrapper.flex-container
+			article.news__card
+				div.news__descr--wrapper
+					h3.news__heading Lorem, ipsum.
+					span.news__date 24.04.2001
+					p.news__descr Lorem ipsum dolor sit amet....
+					a.news__readmore(href="/news/{{ news.id }}")
+						| Readmore
+						span.news__read →
+			article.news__card
+				div.news__descr--wrapper
+					h3.news__heading Lorem, ipsum.
+					span.news__date 24.04.2001
+					p.news__descr Lorem ipsum dolor sit amet....
+					a.news__readmore(href="/news/{{ news.id }}")
+						| Readmore
+						span.news__read →
+			article.news__card
+				div.news__descr--wrapper
+					h3.news__heading Lorem, ipsum.
+					span.news__date 24.04.2001
+					p.news__descr Lorem ipsum dolor sit amet....
+					a.news__readmore(href="/news/{{ news.id }}")
+						| Readmore
+						span.news__read →

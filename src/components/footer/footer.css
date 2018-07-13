@@ -1,11 +1,22 @@
 .main-footer {
-	padding: 35px 0;
-	background: #1d2527;
-	color: #FFF;
+    padding: 15px 0;
+    background: #1d2527;
+    color: #FFF;
+	@media(--small){
+		padding: 35px 0;
+	}
+    .flex-container {
+        flex-flow: column nowrap;
+		align-items: flex-start;
+        @media(--small) {
+            flex-flow: row nowrap;
+        }
+    }
 }
 
 .powered-by {
-	margin-left: auto;
+	margin: 10px 0 0 0;
+	@media(--small){
+		margin-left: auto;
+	}
 }
-
-
